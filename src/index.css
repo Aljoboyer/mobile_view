@@ -1,0 +1,210 @@
+.flex_style{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.flex_between_style{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main_view{
+    height: 100%;
+    width: 80%;
+    background-color: #e5eaf1;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .frame_view{
+   background-color: #f1f4f8;
+    height: 100%;
+    width: 400px;
+    box-shadow: #a7b5cd 0px 5px 15px;
+    border-radius: 30px;
+    padding: 10px 15px 0px 15px;
+
+  }
+  .headers_title{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0px;
+  }
+  .headers{
+    background-color: white;
+    height: 120px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 0px 10px 0px 10px;
+  }
+  .header_main_div{
+    margin-top: 15px;
+  }
+  .header_status_text{
+    font-weight: bold;
+  }
+  .headers_statusbar{
+    padding: 0px 5px 0px 5px;
+
+  }
+  .icons{
+    margin-right: 5px;
+    font-weight: bold;
+  }
+  .empty_div{
+    background-color: #f5f7fa;
+    height: 40px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    width: 250px;
+    margin-bottom: 10px;
+  }
+  .speaker{
+    background-color: #cdd6e2;
+    border: solid 1px #a7b5cd;
+    width: 80px;
+    height: 5px;
+    border-radius: 20px;
+  }
+  .camera{
+    background-color: #cdd6e2;
+    border: solid 1px #a7b5cd;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  .card_frame_view{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: white;
+    width: 320px;
+    /* margin-left: 25px; */
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    height: 200px;
+  }
+  .bitcoin_card_icoin{
+    background-color: #ffa82a;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  .bitcoin_title{
+    font-size: 25;
+    font-weight: bold;
+    margin-left: 30px;
+  }
+  .btc_text{
+    font-size: 25;
+    font-weight: bold;
+    color: #aeb8c4;
+  }
+
+  .bitcoin_amount{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .bitcoin_price{
+    color: #aeb8c4;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .chip{
+    background-color: #ee225d;
+    width: 80px;
+    border-radius: 40px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+  }
+
+.nonCardView{
+  width: 320px;
+  margin-top: 20px;
+}
+.chip_item{
+  width: 70px;
+  border-radius: 40px;
+  height: 35px;
+  background-color: #aeb8c4;
+}
+.chip_text{
+  color: white;
+  
+}
+
+.buySellButton_card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: 150px;
+  padding-top: 30px;
+  background-color: white;
+  border-radius: 20px;
+}
+.blueBg{
+  background-color: #1a97f6;
+}
+.pinkBg{
+  background-color: #fd4a8d;
+}
+.buySellIcon{
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.bottomTab{
+  background-color: white;
+  height: 70px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  padding: 30px 20px 0px 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.graph_icon_div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.graph_text{
+  color: #aeb8c4;
+  font-size: 15px;
+}
+.emptyDiv{
+  height: 5px;
+  background-color: #aeb8c4;
+  width: 100px;
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 200px)  and (max-width: 429px) {
+  .empty_div{
+    background-color: #f5f7fa;
+    height: 40px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  .main_view{
+    height: 100%;
+    width: 100%;
+    background-color: #e5eaf1;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .frame_view{
+    overflow: auto;
+    white-space: nowrap;
+   }
+}
