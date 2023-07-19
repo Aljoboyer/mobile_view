@@ -2,9 +2,11 @@ import { FiMoreVertical , FiChevronLeft} from 'react-icons/fi';
 import { RiWifiLine } from 'react-icons/ri';
 import { BsBatteryFull } from 'react-icons/bs';
 import { GiNetworkBars } from 'react-icons/gi';
+import DropDown from './dropDwon';
+import { useState } from 'react';
 
 function Headers() {
-
+  const [dropDownShow, setDropDownShow] = useState(false)
 
   return (
     <div className='headers'>
@@ -23,8 +25,11 @@ function Headers() {
       <div className='header_main_div flex_between_style'>
         <FiChevronLeft color='#aeb8c4' size={30} />
         <p className='headers_title'>Bitcoin Wallet</p>
-        <FiMoreVertical color='#aeb8c4'  size={30}/>
+        <FiMoreVertical onClick={() => setDropDownShow(!dropDownShow)} color='#aeb8c4'  size={30}/>
       </div>
+    {
+      dropDownShow &&   <DropDown />
+    }
     </div>
   )
 }

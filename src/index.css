@@ -133,11 +133,17 @@
   width: 70px;
   border-radius: 40px;
   height: 35px;
-  background-color: #aeb8c4;
+  cursor: pointer;
 }
-.chip_text{
+.chip_selected{
+  background-color: #aeb8c4;
+  cursor: pointer;
+}
+.chip_text_selected{
   color: white;
-  
+}
+.chip_text_non_selected{
+  color: #aeb8c4;
 }
 
 .buySellButton_card{
@@ -187,6 +193,25 @@
   margin-top: 30px;
 }
 
+.dropDown_view{
+  background-color: white;
+  height: 170px;
+  width: 140px;
+  z-index: 1;
+  position: absolute;
+  left: 52%;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.drop_text_red{
+  color: red;
+}
+.drop_down{
+  font-size: 14px;
+  font-weight: bold;
+}
 @media only screen and (min-width: 200px)  and (max-width: 429px) {
   .empty_div{
     background-color: #f5f7fa;
