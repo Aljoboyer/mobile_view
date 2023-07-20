@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 .flex_style{
   display: flex;
   flex-direction: row;
@@ -12,7 +14,7 @@
 }
 .main_view{
     height: 100%;
-    width: 80%;
+    width: 100%;
     background-color: #e5eaf1;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -21,15 +23,21 @@
    background-color: #f1f4f8;
     height: 100%;
     width: 400px;
-    box-shadow: #a7b5cd 0px 5px 15px;
+    box-shadow:
+     #a7b5cd 0px 5px 15px,
+     0 0 0 10px rgba(0, 0, 0, 0.1) inset;
+
     border-radius: 30px;
-    padding: 10px 15px 0px 15px;
+    padding: 20px;
+
 
   }
   .headers_title{
     font-size: 25px;
     font-weight: bold;
     margin: 0px;
+    color: #4c5968;
+    font-family: Inter;
   }
   .headers{
     background-color: white;
@@ -43,6 +51,9 @@
   }
   .header_status_text{
     font-weight: bold;
+    color: #434358;
+    font-family: Inter;
+    font-size: 12px;
   }
   .headers_statusbar{
     padding: 0px 5px 0px 5px;
@@ -76,7 +87,8 @@
     margin-left: 10px;
   }
   .card_frame_view{
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
     background-color: white;
     width: 320px;
     /* margin-left: 25px; */
@@ -95,11 +107,14 @@
     font-size: 25;
     font-weight: bold;
     margin-left: 30px;
+    color: #4c5968;
+    font-family: Inter;
   }
   .btc_text{
     font-size: 25;
     font-weight: bold;
     color: #aeb8c4;
+    font-family: Inter;
   }
 
   .bitcoin_amount{
@@ -107,6 +122,8 @@
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 10px;
+    color: #4c5968;
+    font-family: Inter;
   }
 
   .bitcoin_price{
@@ -115,6 +132,7 @@
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 10px;
+    font-family: Inter;
   }
   .chip{
     background-color: #ee225d;
@@ -141,17 +159,27 @@
 }
 .chip_text_selected{
   color: white;
+  font-family: Inter;
 }
 .chip_text_non_selected{
   color: #aeb8c4;
+  font-family: Inter;
 }
-
+ .chip_item:hover{
+  background-color: #aeb8c4;
+  cursor: pointer;
+ }
+ .chip_text:hover{
+  color: white;
+  font-family: Inter;
+ }
 .buySellButton_card{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
   width: 150px;
   padding-top: 30px;
   background-color: white;
@@ -185,6 +213,7 @@
 .graph_text{
   color: #aeb8c4;
   font-size: 15px;
+  font-family: Inter;
 }
 .emptyDiv{
   height: 5px;
@@ -207,12 +236,21 @@
 
 .drop_text_red{
   color: red;
+  font-family: Inter;
 }
 .drop_down{
   font-size: 14px;
   font-weight: bold;
+  font-family: Inter;
 }
-@media only screen and (min-width: 200px)  and (max-width: 429px) {
+.dropDown_item{
+ border-bottom: solid 1px black;
+}
+.optionText{
+  font-family: Inter;
+  font-weight: 400;
+}
+@media only screen and (min-width: 200px)  and (max-width: 475px) {
   .empty_div{
     background-color: #f5f7fa;
     height: 40px;
@@ -231,5 +269,13 @@
   .frame_view{
     overflow: auto;
     white-space: nowrap;
+    width: 380px;
    }
+   .card_frame_view{
+    width: 300px;
+  }
+  .main_view{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
